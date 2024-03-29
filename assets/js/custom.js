@@ -13,9 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
         option.setAttribute('data-index', index);
         voiceSelect.appendChild(option);
       });
+    }else{
+      alert("Your browser does not support text-to-speech functionality.");
     }
   }
 
+  populateVoiceList();
   if (speechSynthesis.onvoiceschanged !== undefined) {
     speechSynthesis.onvoiceschanged = populateVoiceList;
   }
