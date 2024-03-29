@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Text to Speech Demo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  </head>
+  <body>
+    <section class="py-5">
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 mb-5">
+            <h1>Elnaggarlegal - Text to Speech demo</h1>
+          </div>
+          <div class="col-12">
+            <form id="speechForm" class="row g-3 needs-validation" novalidate>
+              <div class="col-lg-6">
+                <label for="voiceSelect" class="form-label">Choose Voice</label>
+                <select class="form-select" id="voiceSelect">
+                  <!-- Options will be populated by JavaScript -->
+                </select>
+              </div>
+
+              <div class="col-12">
+                <label for="textInput" class="form-label">Text to Speak</label>
+                <textarea class="form-control" id="textInput" rows="5">Elnaggar & Partners is a boutique law firm that provides bespoke legal services to individuals residing in the UAE, small to medium-sized enterprises, as well as, multinational companies – especially European based companies.
+We offer our clients a personalized and focused experience, built on the foundations of honesty, reliability, and attention to detail. Our experienced legal team provides a safe and family environment to our clients, something that many larger commercial firms cannot offer.
+                </textarea>
+              </div>
+
+              <div class="col-12">
+                <div class="d-flex gap-3">
+                  <button type="submit" class="btn btn-primary">Speak</button>
+                  <button type="button" class="btn btn-secondary" id="stopButton">Stop</button>
+                </div>
+              </div>
+
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="assets/js/custom.js" charset="utf-8"></script>
+  </body>
+</html>
